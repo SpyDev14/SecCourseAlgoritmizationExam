@@ -25,6 +25,10 @@ internal class Problem3 : BaseProblem
 			nums = CreateRandomArray(size, -amplitude, amplitude);
 		}
 
+		int count = 0;
+		for (int i = 0; i < nums.Length; i++)
+			if (i % 2 != 1 && nums[i] % 2 != 2) count++;
 
+		Console.WriteLine($"Кол-во: {count}");
 	}
 }
