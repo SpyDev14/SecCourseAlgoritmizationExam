@@ -171,7 +171,7 @@ internal static class ProjectBuiltins
 			validation: (static (v) => v.ToLower() is "да" or "нет", "Только да/нет"),
 			allowBreak: allowBreak,
 			goNextLineOnSuccess: goNextLineOnSuccess,
-			prefix: "Да / Нет >>>"
+			prefix: "Да / Нет >>> "
 		).ToLower() == "да";
 	}
 
