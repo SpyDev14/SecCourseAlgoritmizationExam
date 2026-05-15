@@ -2,7 +2,7 @@
 
 internal class Problem3 : BaseProblem
 {
-	public override string Number => "1";
+	public override string Number => "3";
 	protected override string RawDescription => @"
 		Дан одномерный целочисленный массив А, состоящий из N
 		элементов, N — заданное натуральное число. Составить
@@ -25,6 +25,10 @@ internal class Problem3 : BaseProblem
 			nums = CreateRandomArray(size, -amplitude, amplitude);
 		}
 
+		int count = 0;
+		for (int i = 0; i < nums.Length; i++)
+			if (i % 2 != 1 && nums[i] % 2 != 2) count++;
 
+		Console.WriteLine($"Кол-во: {count}");
 	}
 }

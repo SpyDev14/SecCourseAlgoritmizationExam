@@ -168,7 +168,7 @@ internal static class ProjectBuiltins
 	{
 		return InputStr(
 			name,
-			validation: (static (v) => v.ToLower() is "да" or "нет", "Только да/нет")
+			validation: (static (v) => v.ToLower() is "да" or "нет", "Только да/нет"),
 			allowBreak: allowBreak,
 			goNextLineOnSuccess: goNextLineOnSuccess,
 			prefix: "Да / Нет >>>"
