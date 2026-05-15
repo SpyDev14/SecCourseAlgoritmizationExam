@@ -27,7 +27,7 @@ internal class Problem3 : BaseProblem
 
 		int count = 0;
 		for (int i = 0; i < nums.Length; i++)
-			if (i % 2 != 1 && nums[i] % 2 != 2) count++;
+			if (i % 2 == 1 && Math.Abs(nums[i]) % 2 == 1) count++;
 
 		Console.WriteLine($"Кол-во: {count}");
 	}
